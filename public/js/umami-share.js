@@ -65,7 +65,7 @@
 		startAt = 0,
 		endAt = Date.now(),
 	) {
-		const statsUrl = `${baseUrl}/v1/websites/${websiteId}/stats?startAt=${startAt}&endAt=${endAt}&path=${encodeURIComponent(urlPath)}`;
+		const statsUrl = `${baseUrl}/api/websites/${websiteId}/stats?startAt=${startAt}&endAt=${endAt}&path=${encodeURIComponent(urlPath)}`;
 
 		const res = await fetch(statsUrl, {
 			headers: {
