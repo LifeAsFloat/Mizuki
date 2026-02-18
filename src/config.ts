@@ -156,8 +156,9 @@ export const siteConfig: SiteConfig = {
 		homeText: {
 			enable: true, // 在主页显示自定义文本
 			title: "", // 主页横幅主标题
-			
+
 			subtitle: [
+			
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -263,6 +264,18 @@ export const navBarConfig: NavBarConfig = {
 					external: true,
 					icon: "fa7-brands:github",
 				},
+				{
+					name: "Bilibili",
+					url: "",
+					external: true,
+					icon: "fa6-brands:bilibili",
+				},
+				{
+					name: "Gitee",
+					url: "",
+					external: true,
+					icon: "mdi:git",
+				},
 			],
 		},
 		{
@@ -299,12 +312,39 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:info",
 			children: [
 				{
+					name: "About",
+					url: "/about/",
+					icon: "material-symbols:person",
+				},
+				{
 					name: "Friends",
 					url: "/friends/",
 					icon: "material-symbols:group",
 				},
 			],
-		},	
+		},
+		{
+			name: "Others",
+			url: "#",
+			icon: "material-symbols:more-horiz",
+			children: [
+				{
+					name: "Projects",
+					url: "/projects/",
+					icon: "material-symbols:work",
+				},
+				{
+					name: "Skills",
+					url: "/skills/",
+					icon: "material-symbols:psychology",
+				},
+				{
+					name: "Timeline",
+					url: "/timeline/",
+					icon: "material-symbols:timeline",
+				},
+			],
+		},
 	],
 };
 
@@ -317,7 +357,31 @@ export const profileConfig: ProfileConfig = {
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
-	
+		{
+			name: "Bilibili",
+			icon: "fa6-brands:bilibili",
+			url: "",
+		},
+		{
+			name: "Gitee",
+			icon: "mdi:git",
+			url: "",
+		},
+		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "",
+		},
+		{
+			name: "Codeberg",
+			icon: "simple-icons:codeberg",
+			url: "",
+		},
+		{
+			name: "Discord",
+			icon: "fa6-brands:discord",
+			url: "",
+		},
 	],
 };
 
