@@ -35,10 +35,6 @@ export default defineConfig({
 
 	output: "static",
 
-	image: {
-		formats: ["avif", "png", "jpg"],
-	},
-
 	integrations: [
 		tailwind({
 			nesting: true,

@@ -268,7 +268,7 @@ export const navBarConfig: NavBarConfig = {
 					name: "Bilibili",
 					url: "",
 					external: true,
-					icon: "fa6-brands:bilibili",
+					icon: "fa7-brands:bilibili",
 				},
 				{
 					name: "Gitee",
@@ -359,7 +359,7 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "Bilibili",
-			icon: "fa6-brands:bilibili",
+			icon: "fa7-brands:bilibili",
 			url: "",
 		},
 		{
@@ -369,7 +369,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "GitHub",
-			icon: "fa6-brands:github",
+			icon: "fa7-brands:github",
 			url: "",
 		},
 		{
@@ -379,7 +379,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "Discord",
-			icon: "fa6-brands:discord",
+			icon: "fa7-brands:discord",
 			url: "",
 		},
 	],
