@@ -156,13 +156,8 @@ export const siteConfig: SiteConfig = {
 		homeText: {
 			enable: true, // 在主页显示自定义文本
 			title: "", // 主页横幅主标题
-
+			
 			subtitle: [
-				// "特別なことはないけど、君がいると十分です",
-				// "今でもあなたは私の光",
-				// "君ってさ、知らないうちに私の毎日になってたよ",
-				// "君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				// "今日はなんでもない日。でも、ちょっとだけいい日",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -268,18 +263,6 @@ export const navBarConfig: NavBarConfig = {
 					external: true,
 					icon: "fa7-brands:github",
 				},
-				// {
-				// 	name: "Bilibili",
-				// 	url: "https://space.bilibili.com/701864046",
-				// 	external: true,
-				// 	icon: "fa6-brands:bilibili",
-				// },
-				// {
-				// 	name: "Gitee",
-				// 	url: "https://gitee.com/matsuzakayuki/Mizuki",
-				// 	external: true,
-				// 	icon: "mdi:git",
-				// },
 			],
 		},
 		{
@@ -315,40 +298,13 @@ export const navBarConfig: NavBarConfig = {
 			url: "/content/",
 			icon: "material-symbols:info",
 			children: [
-				// {
-				// 	name: "About",
-				// 	url: "/about/",
-				// 	icon: "material-symbols:person",
-				// },
 				{
 					name: "Friends",
 					url: "/friends/",
 					icon: "material-symbols:group",
 				},
 			],
-		},
-		// {
-		// 	name: "Others",
-		// 	url: "#",
-		// 	icon: "material-symbols:more-horiz",
-		// 	children: [
-		// 		{
-		// 			name: "Projects",
-		// 			url: "/projects/",
-		// 			icon: "material-symbols:work",
-		// 		},
-		// 		{
-		// 			name: "Skills",
-		// 			url: "/skills/",
-		// 			icon: "material-symbols:psychology",
-		// 		},
-		// 		{
-		// 			name: "Timeline",
-		// 			url: "/timeline/",
-		// 			icon: "material-symbols:timeline",
-		// 		},
-		// 	],
-		// },
+		},	
 	],
 };
 
@@ -361,31 +317,7 @@ export const profileConfig: ProfileConfig = {
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
-		// {
-		// 	name: "Bilibili",
-		// 	icon: "fa6-brands:bilibili",
-		// 	url: "https://space.bilibili.com/701864046",
-		// },
-		// {
-		// 	name: "Gitee",
-		// 	icon: "mdi:git",
-		// 	url: "https://gitee.com/matsuzakayuki",
-		// },
-		// {
-		// 	name: "GitHub",
-		// 	icon: "fa6-brands:github",
-		// 	url: "https://github.com/LifeAsFloat",
-		// },
-		// {
-		// 	name: "Codeberg",
-		// 	icon: "simple-icons:codeberg",
-		// 	url: "https://codeberg.org",
-		// },
-		// {
-		// 	name: "Discord",
-		// 	icon: "fa6-brands:discord",
-		// 	url: "https://discord.gg/MqW6TcQtVM",
-		// },
+	
 	],
 };
 
