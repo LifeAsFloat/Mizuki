@@ -1,4 +1,5 @@
-# 🌸 Mizuki <img align='right' src='logo.png' width='200px' alt="Mizuki logo">
+# 🌸 Mizuki 
+<img align='right' src='logo.png' width='200px' alt="Mizuki logo">
 
 A modern, feature-rich static blog template built with [Astro](https://astro.build), featuring advanced functionality and beautiful design.
 
@@ -10,7 +11,7 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 
 [**🖥️ Live Demo**](https://mizuki.mysqil.com/) | [**📝 Documentation**](https://docs.mizuki.mysqil.com/)
 
-🌏 README Languages
+🌏 **README Languages:**
 [**English**](./README.md) / [**中文**](./README.zh.md) / [**日本語**](./README.ja.md) / [**中文繁体**](./README.tw.md) /
 
 Get started quickly with our comprehensive documentation. Whether you're customizing your theme, configuring features, or deploying to production, the documentation covers everything you need to launch your blog successfully.
@@ -164,6 +165,7 @@ tags: [tag1, tag2]
 category: Frontend
 draft: false
 pinned: false
+comment: true
 lang: en      # Only set when article language differs from site language in config.ts
 ---
 ```
@@ -178,6 +180,7 @@ lang: en      # Only set when article language differs from site language in con
 - **category**: Article category
 - **draft**: Set to `true` to hide article in production
 - **pinned**: Set to `true` to pin article to top
+- **comment**: Set to `true` to enable article comment area (requires global comment function enabled)
 - **lang**: Article language (only set when different from site default)
 
 ### Pinned Articles Feature
@@ -193,6 +196,19 @@ pinned: false # Regular article (default)
 **Sorting Rules:**
 1. Pinned articles appear first, sorted by publication date (newest first)
 2. Regular articles follow, sorted by publication date (newest first)
+
+### Article-Level Comment Control
+
+The `comment` field allows you to individually control the enabling and disabling of the comment area for each article.
+
+**Usage:**
+```yaml
+comment: true  # Enable comments (default)
+comment: false # Disable comments
+```
+
+**Note:**
+This feature requires the comment system to be enabled in `src/config.ts` first.
 
 ## 🧩 Markdown Extensions
 
@@ -324,7 +340,7 @@ This project is based on [Fuwari](https://github.com/saicaca/fuwari), which is l
 
 - Based on the original [Fuwari](https://github.com/saicaca/fuwari) template
 - Inspired by [Yukina](https://github.com/WhitePaper233/yukina) - a beautiful and elegant blog template
-- Some designs are inspired by [Firefly](https://github.com/CuteLeaf/Firefly) template
+- Some designs are inspired by [Firefly](https://github.com/CuteLeaf/Firefly) & [Twilight](https://github.com/spr-aachen/Twilight) templates
 - Uses [Pio](https://github.com/Dreamer-Paul/Pio) to implement the adorable Live2D mascot plugin
 - Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
 - Icons from [Iconify](https://iconify.design/)
@@ -334,6 +350,7 @@ This project is based on [Fuwari](https://github.com/saicaca/fuwari), which is l
 - **[Fuwari](https://github.com/saicaca/fuwari)** by saicaca - The original template that this project is based on. Thank you for creating such a beautiful and functional template.
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - Thanks for providing design inspiration and creativity that helped shape this project. Yukina is an elegant blog template that demonstrates excellent design principles and user experience.
 - **[Firefly](https://github.com/CuteLeaf/Firefly)** - Thanks for providing excellent layout design ideas. The dual sidebar layout, article dual-column grid layout, and some widget designs and implementations have enriched Mizuki's interface.
+- **[Twilight](https://github.com/spr-aachen/Twilight)** - Thanks for providing inspiration and technical support. Twilight's dynamic wallpaper modes switching system, responsive design and transition effects have greatly enhanced the user experience of Mizuki.
 
 ## 🍀 Contributors
 
