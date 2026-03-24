@@ -15,18 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      # 1. 检出代码 (升级为 v4 消除警告)
       - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
 
-      # 2. 安装 pnpm (锁定 v8，避免 workspace 严格校验报错)
+      # 2. 安装 pnpm (直接去掉 version 参数，它会自动读取 package.json 安装 10.22.0)
       - uses: pnpm/action-setup@v4
-        with:
-          version: 8
 
-      # 3. 设置 Node.js (升级为 v4 消除警告，并开启 pnpm 缓存提速)
+      # 3. 设置 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -39,7 +36,7 @@ jobs:
           pnpm install
           pnpm run build
 
-      # 5. 部署到 Azure (Azure 的这部分参数配置完全正确)
+      # 5. 部署到 Azure
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
