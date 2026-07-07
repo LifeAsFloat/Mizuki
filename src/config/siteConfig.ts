@@ -148,7 +148,7 @@ export const siteConfig: SiteConfig = {
 
     homeText: {
       enable: true,
-      title: "わたしの部屋",
+      title: "LifeAsFloat",
       switchable: true,
 
       subtitle: [
