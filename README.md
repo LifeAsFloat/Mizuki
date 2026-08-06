@@ -265,7 +265,7 @@ All commands are run from the project root:
 
 ### 🔧 Basic Configuration
 
-Edit `src/config.ts` to customize your blog:
+Edit `src/config/siteConfig.ts` to customize your blog:
 
 ```typescript
 export const siteConfig: SiteConfig = {
@@ -351,6 +351,10 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 ### Original Project License
 
 This project is based on [Fuwari](https://github.com/saicaca/fuwari), which is licensed under the MIT License. The original copyright notice and permission notice are included in the LICENSE.MIT file in accordance with the MIT License requirements.
+
+### Third-Party Notices
+
+Portions of the Markdown enhancements are adapted from [Firefly](https://github.com/CuteLeaf/Firefly) under the MIT License. The original copyright and complete license text are retained in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## 🙏 Acknowledgements
 
